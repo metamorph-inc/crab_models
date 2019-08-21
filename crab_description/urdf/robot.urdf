@@ -1,0 +1,2495 @@
+<?xml version="1.0" ?>
+<robot name="Crab_1">
+  <!--Joints-->
+  <joint name="base_link_to_a_2095_01_45Z" type="fixed">
+    <parent link="base_link"/>
+    <child link="a_2095_01_45Z"/>
+  </joint>
+  <joint name="a_2095_01_45Z_to_tubepar_40Z" type="fixed">
+    <parent link="a_2095_01_45Z"/>
+    <child link="tubepar_40Z"/>
+    <origin rpy="-2.09439510229 -1.57079632679 0.0" xyz="0.0433012702137 -0.0249999999987 -0.001"/>
+  </joint>
+  <joint name="tubepar_40Z_to_a_2039_02_46Z" type="fixed">
+    <parent link="tubepar_40Z"/>
+    <child link="a_2039_02_46Z"/>
+    <origin rpy="-1.57079632679 -2.49972740699e-14 1.57079632679" xyz="-1.77882983978e-18 0.127 1.29164951977e-34"/>
+  </joint>
+  <joint name="a_2039_02_46Z_to_a_2039_02_32Z" type="fixed">
+    <parent link="a_2039_02_46Z"/>
+    <child link="a_2039_02_32Z"/>
+    <origin rpy="3.14159265359 6.12323399574e-17 -2.61799387799" xyz="0.014 5.99183964918e-16 0.02"/>
+  </joint>
+  <joint name="a_2039_02_32Z_to_tubepar_30Z" type="fixed">
+    <parent link="a_2039_02_32Z"/>
+    <child link="tubepar_30Z"/>
+    <origin rpy="1.57079632679 1.57079632679 0.0" xyz="-0.014 2.6908669449e-17 -0.02"/>
+  </joint>
+  <joint name="tubepar_30Z_to_a_2038_02_31Z" type="fixed">
+    <parent link="tubepar_30Z"/>
+    <child link="a_2038_02_31Z"/>
+    <origin rpy="-1.57079632679 7.0397173103e-17 1.57079632679" xyz="-8.20357803102e-19 -0.2 -5.03064256918e-15"/>
+  </joint>
+  <joint name="a_2038_02_31Z_to_pm-2132-01_29Z" type="fixed">
+    <parent link="a_2038_02_31Z"/>
+    <child link="pm-2132-01_29Z"/>
+    <origin rpy="3.14159265359 3.12323916977e-16 1.0471975512" xyz="-0.0135 3.07115354976e-16 -0.02"/>
+  </joint>
+  <joint name="pm-2132-01_29Z_to_hebi_x5_4_26Z" type="fixed">
+    <parent link="pm-2132-01_29Z"/>
+    <child link="hebi_x5_4_26Z"/>
+    <origin rpy="-1.57079632679 -3.12323916977e-16 -3.14159265359" xyz="1.59404075496e-17 -0.043 0.04"/>
+  </joint>
+  <joint name="FrontRightLeg/Wheel/X5_4" type="revolute">
+    <parent link="hebi_x5_4_26Z"/>
+    <child link="pm_2155_01_21Z"/>
+    <axis xyz="2.03934754218e-16 -1.12263246658e-15 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-2.14e9" upper="+2.14e9" velocity="100"/>
+    <origin rpy="0.0 -2.77555756027e-17 5.54667823984e-32" xyz="-5.07253762283e-17 1.510621373e-16 0.03"/>
+  </joint>
+  <gazebo reference="FrontRightLeg/Wheel/X5_4">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <joint name="pm_2155_01_21Z_to_pp_2074_08_65Z" type="fixed">
+    <parent link="pm_2155_01_21Z"/>
+    <child link="pp_2074_08_65Z"/>
+    <origin rpy="-1.81492413814e-16 3.98951220638e-15 -0.78539816347" xyz="1.34538967405e-17 4.40377213791e-17 0.009"/>
+  </joint>
+  <joint name="a_2095_01_45Z_to_tubepar_42Z" type="fixed">
+    <parent link="a_2095_01_45Z"/>
+    <child link="tubepar_42Z"/>
+    <origin rpy="-3.14159265359 -1.57079632679 0.0" xyz="1e-23 0.05 -0.001"/>
+  </joint>
+  <joint name="tubepar_42Z_to_a_2039_02_47Z" type="fixed">
+    <parent link="tubepar_42Z"/>
+    <child link="a_2039_02_47Z"/>
+    <origin rpy="-1.57079632679 -2.50240867501e-14 -1.57079632679" xyz="1.51533398302e-19 -0.075 -1.00000000003e-23"/>
+  </joint>
+  <joint name="a_2039_02_47Z_to_hebi_x5_4_58Z" type="fixed">
+    <parent link="a_2039_02_47Z"/>
+    <child link="hebi_x5_4_58Z"/>
+    <origin rpy="1.22464679915e-16 1.04083409e-17 2.4901621895e-14" xyz="0.014 3.34009026003e-16 0.02"/>
+  </joint>
+  <joint name="LeftArm/Base/X5_4" type="revolute">
+    <parent link="hebi_x5_4_58Z"/>
+    <child link="a_2040_01l_54Z"/>
+    <axis xyz="-7.16406808574e-17 -1.73472348e-16 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-2" upper="+2" velocity="100"/>
+    <origin rpy="-1.23259516441e-32 3.34767643574e-17 1.22464679915e-16" xyz="-5.89926392865e-17 -2.96636102637e-18 0.03"/>
+  </joint>
+  <gazebo reference="LeftArm/Base/X5_4">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <joint name="a_2040_01l_54Z_to_hebi_x5_9_63Z" type="fixed">
+    <parent link="a_2040_01l_54Z"/>
+    <child link="hebi_x5_9_63Z"/>
+    <origin rpy="-1.57079632679 -6.12323399574e-17 5.08239990574e-17" xyz="5.10619633156e-17 -0.0225 0.055"/>
+  </joint>
+  <joint name="LeftArm/Shoulder/X5_9" type="revolute">
+    <parent link="hebi_x5_9_63Z"/>
+    <child link="a_2038_02_62Z"/>
+    <axis xyz="5.08238238768e-17 -2.27765793957e-16 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-3.53" upper="+0.4" velocity="100"/>
+    <origin rpy="0.0 -2.77555756e-17 -6.16297582204e-33" xyz="-5.53187041445e-17 -6.83297381872e-18 0.03"/>
+  </joint>
+  <gazebo reference="LeftArm/Shoulder/X5_9">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <joint name="a_2038_02_62Z_to_tubepar_56Z" type="fixed">
+    <parent link="a_2038_02_62Z"/>
+    <child link="tubepar_56Z"/>
+    <origin rpy="1.57079632679 -1.57079632679 0.0" xyz="0.0135 -1.67831784012e-18 0.02"/>
+  </joint>
+  <joint name="tubepar_56Z_to_a_2039_02_61Z" type="fixed">
+    <parent link="tubepar_56Z"/>
+    <child link="a_2039_02_61Z"/>
+    <origin rpy="-1.57079632679 -2.50240867501e-14 -1.57079632679" xyz="4.84788958735e-18 -0.3 1.31655315772e-17"/>
+  </joint>
+  <joint name="a_2039_02_61Z_to_hebi_x5_4_64Z" type="fixed">
+    <parent link="a_2039_02_61Z"/>
+    <child link="hebi_x5_4_64Z"/>
+    <origin rpy="1.22464679915e-16 1.04083409e-17 2.4901621895e-14" xyz="0.014 3.15316657481e-16 0.02"/>
+  </joint>
+  <joint name="LeftArm/Elbow/X5_4" type="revolute">
+    <parent link="hebi_x5_4_64Z"/>
+    <child link="a_2038_02_60Z"/>
+    <axis xyz="6.81710585768e-17 -3.43291579872e-16 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-1.7" upper="+1.7" velocity="100"/>
+    <origin rpy="0.0 -2.77555756e-17 -1.23259516441e-32" xyz="-5.47982871035e-17 -1.02987473962e-17 0.03"/>
+  </joint>
+  <gazebo reference="LeftArm/Elbow/X5_4">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <joint name="a_2038_02_60Z_to_tubepar_59Z" type="fixed">
+    <parent link="a_2038_02_60Z"/>
+    <child link="tubepar_59Z"/>
+    <origin rpy="1.57079632679 -1.57079632679 0.0" xyz="0.0135 -2.33555801463e-18 0.02"/>
+  </joint>
+  <joint name="tubepar_59Z_to_a_2039_02_55Z" type="fixed">
+    <parent link="tubepar_59Z"/>
+    <child link="a_2039_02_55Z"/>
+    <origin rpy="1.57079632679 2.50240867501e-14 -1.57079632679" xyz="-3.56280822649e-19 -0.3 4.84778447903e-18"/>
+  </joint>
+  <joint name="a_2039_02_55Z_to_hebi_x5_1_57Z" type="fixed">
+    <parent link="a_2039_02_55Z"/>
+    <child link="hebi_x5_1_57Z"/>
+    <origin rpy="1.22464679915e-16 1.04083409e-17 2.50240867501e-14" xyz="0.014 3.29041787173e-16 0.02"/>
+  </joint>
+  <joint name="LeftArm/Wrist/X5_1" type="revolute">
+    <parent link="hebi_x5_1_57Z"/>
+    <child link="a_2067_01_4Z"/>
+    <axis xyz="-1.06334975077e-16 -3.43291579872e-16 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-2.14e9" upper="+2.14e9" velocity="100"/>
+    <origin rpy="0.0 -2.77555756e-17 -1.23259516441e-32" xyz="-3.19004925231e-18 -1.02987473962e-17 0.03"/>
+  </joint>
+  <gazebo reference="LeftArm/Wrist/X5_1">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <joint name="a_2095_01_45Z_to_tubepar_50Z" type="fixed">
+    <parent link="a_2095_01_45Z"/>
+    <child link="tubepar_50Z"/>
+    <origin rpy="2.09439510229 -1.57079632679 0.0" xyz="-0.0433012701559 -0.0250000000011 -0.001"/>
+  </joint>
+  <joint name="tubepar_50Z_to_a_2039_02_49Z" type="fixed">
+    <parent link="tubepar_50Z"/>
+    <child link="a_2039_02_49Z"/>
+    <origin rpy="-1.57079632679 -2.50162318231e-14 1.57079632679" xyz="-1.66780753732e-18 0.127 -7.1054273576e-18"/>
+  </joint>
+  <joint name="a_2039_02_49Z_to_a_2039_02_9Z" type="fixed">
+    <parent link="a_2039_02_49Z"/>
+    <child link="a_2039_02_9Z"/>
+    <origin rpy="3.14159265359 -6.12323399574e-17 2.61799387799" xyz="0.014 5.86749467042e-16 0.02"/>
+  </joint>
+  <joint name="a_2039_02_9Z_to_tubepar_7Z" type="fixed">
+    <parent link="a_2039_02_9Z"/>
+    <child link="tubepar_7Z"/>
+    <origin rpy="1.57079632679 1.57079632679 0.0" xyz="-0.014 1.56382050131e-17 -0.02"/>
+  </joint>
+  <joint name="tubepar_7Z_to_a_2038_02_8Z" type="fixed">
+    <parent link="tubepar_7Z"/>
+    <child link="a_2038_02_8Z"/>
+    <origin rpy="-1.57079632679 -1.15289174568e-17 1.57079632679" xyz="4.32068283077e-18 -0.2 -5.0448534239e-15"/>
+  </joint>
+  <joint name="a_2038_02_8Z_to_pm-2132-01_6Z" type="fixed">
+    <parent link="a_2038_02_8Z"/>
+    <child link="pm-2132-01_6Z"/>
+    <origin rpy="-3.14159265359 3.12323916977e-16 2.09439510239" xyz="-0.0135 3.50911952562e-16 -0.02"/>
+  </joint>
+  <joint name="pm-2132-01_6Z_to_hebi_x5_4_39Z" type="fixed">
+    <parent link="pm-2132-01_6Z"/>
+    <child link="hebi_x5_4_39Z"/>
+    <origin rpy="-1.57079632679 -3.12323916977e-16 -3.14159265359" xyz="6.07603094376e-19 -0.043 0.04"/>
+  </joint>
+  <joint name="BackRightLeg/Wheel/X5_4" type="revolute">
+    <parent link="hebi_x5_4_39Z"/>
+    <child link="pm_2155_01_1Z"/>
+    <axis xyz="2.89067447375e-15 -4.84500417478e-16 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-2.14e9" upper="+2.14e9" velocity="100"/>
+    <origin rpy="0.0 -2.77555756027e-17 1.23259516441e-32" xyz="-8.38100223695e-17 1.38866969061e-17 0.03"/>
+  </joint>
+  <gazebo reference="BackRightLeg/Wheel/X5_4">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <joint name="pm_2155_01_1Z_to_pp_2074_08_27Z" type="fixed">
+    <parent link="pm_2155_01_1Z"/>
+    <child link="pp_2074_08_27Z"/>
+    <origin rpy="1.96131761721e-16 9.79670465943e-16 -0.785398163261" xyz="7.17406055329e-17 9.99051661838e-18 0.009"/>
+  </joint>
+  <joint name="a_2095_01_45Z_to_tubepar_48Z" type="fixed">
+    <parent link="a_2095_01_45Z"/>
+    <child link="tubepar_48Z"/>
+    <origin rpy="-2.09439510229 -1.57079632679 0.0" xyz="-0.0433012701559 0.0250000000011 -0.001"/>
+  </joint>
+  <joint name="tubepar_48Z_to_a_2039_02_52Z" type="fixed">
+    <parent link="tubepar_48Z"/>
+    <child link="a_2039_02_52Z"/>
+    <origin rpy="1.57079632679 2.49972740699e-14 -1.57079632679" xyz="1.13495302842e-19 -0.127 2.27373675443e-16"/>
+  </joint>
+  <joint name="a_2039_02_52Z_to_a_2039_02_36Z" type="fixed">
+    <parent link="a_2039_02_52Z"/>
+    <child link="a_2039_02_36Z"/>
+    <origin rpy="3.14159265359 6.12323399574e-17 -2.61799387799" xyz="0.014 3.73586646314e-16 0.02"/>
+  </joint>
+  <joint name="a_2039_02_36Z_to_tubepar_35Z" type="fixed">
+    <parent link="a_2039_02_36Z"/>
+    <child link="tubepar_35Z"/>
+    <origin rpy="1.57079632679 1.57079632679 0.0" xyz="-0.014 2.62963460495e-17 -0.02"/>
+  </joint>
+  <joint name="tubepar_35Z_to_a_2038_02_34Z" type="fixed">
+    <parent link="tubepar_35Z"/>
+    <child link="a_2038_02_34Z"/>
+    <origin rpy="-1.57079632679 7.0397173103e-17 1.57079632679" xyz="2.78474452683e-18 -0.2 -5.00222085975e-15"/>
+  </joint>
+  <joint name="a_2038_02_34Z_to_pm-2132-01_33Z" type="fixed">
+    <parent link="a_2038_02_34Z"/>
+    <child link="pm-2132-01_33Z"/>
+    <origin rpy="3.14159265359 3.12323916977e-16 1.0471975512" xyz="-0.0135 3.5624102308e-16 -0.02"/>
+  </joint>
+  <joint name="pm-2132-01_33Z_to_hebi_x5_4_37Z" type="fixed">
+    <parent link="pm-2132-01_33Z"/>
+    <child link="hebi_x5_4_37Z"/>
+    <origin rpy="-1.57079632679 -3.12323916977e-16 -3.14159265359" xyz="1.38192570725e-17 -0.043 0.04"/>
+  </joint>
+  <joint name="BackLeftLeg/Wheel/X5_4" type="revolute">
+    <parent link="hebi_x5_4_37Z"/>
+    <child link="pm_2155_01_28Z"/>
+    <axis xyz="2.03934754218e-16 -1.0920162966e-15 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-2.14e9" upper="+2.14e9" velocity="100"/>
+    <origin rpy="0.0 -2.77555756027e-17 4.93038065763e-32" xyz="-5.07253762283e-17 1.37769767684e-16 0.03"/>
+  </joint>
+  <gazebo reference="BackLeftLeg/Wheel/X5_4">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <joint name="pm_2155_01_28Z_to_pp_2074_08_2Z" type="fixed">
+    <parent link="pm_2155_01_28Z"/>
+    <child link="pp_2074_08_2Z"/>
+    <origin rpy="2.90547214556e-15 6.02176489237e-15 -0.785398163325" xyz="7.02973156013e-17 4.43132669088e-17 0.009"/>
+  </joint>
+  <joint name="a_2095_01_45Z_to_tubepar_43Z" type="fixed">
+    <parent link="a_2095_01_45Z"/>
+    <child link="tubepar_43Z"/>
+    <origin rpy="2.09439510229 -1.57079632679 0.0" xyz="0.0433012701559 0.0250000000011 -0.001"/>
+  </joint>
+  <joint name="tubepar_43Z_to_a_2039_02_41Z" type="fixed">
+    <parent link="tubepar_43Z"/>
+    <child link="a_2039_02_41Z"/>
+    <origin rpy="1.57079632679 2.50162318231e-14 -1.57079632679" xyz="1.13495302842e-19 -0.127 2.13162820728e-16"/>
+  </joint>
+  <joint name="a_2039_02_41Z_to_a_2039_02_25Z" type="fixed">
+    <parent link="a_2039_02_41Z"/>
+    <child link="a_2039_02_25Z"/>
+    <origin rpy="3.14159265359 -6.12323399574e-17 2.61799387799" xyz="0.014 3.5582307792e-16 0.02"/>
+  </joint>
+  <joint name="a_2039_02_25Z_to_tubepar_24Z" type="fixed">
+    <parent link="a_2039_02_25Z"/>
+    <child link="tubepar_24Z"/>
+    <origin rpy="1.57079632679 1.57079632679 0.0" xyz="-0.014 1.62505284126e-17 -0.02"/>
+  </joint>
+  <joint name="tubepar_24Z_to_a_2038_02_23Z" type="fixed">
+    <parent link="tubepar_24Z"/>
+    <child link="a_2038_02_23Z"/>
+    <origin rpy="-1.57079632679 -1.15289174568e-17 1.57079632679" xyz="8.20357803102e-19 -0.2 -5.01643171447e-15"/>
+  </joint>
+  <joint name="a_2038_02_23Z_to_pm-2132-01_22Z" type="fixed">
+    <parent link="a_2038_02_23Z"/>
+    <child link="pm-2132-01_22Z"/>
+    <origin rpy="-3.14159265359 3.12323916977e-16 2.09439510239" xyz="-0.0135 3.23102566531e-16 -0.02"/>
+  </joint>
+  <joint name="pm-2132-01_22Z_to_hebi_x5_4_38Z" type="fixed">
+    <parent link="pm-2132-01_22Z"/>
+    <child link="hebi_x5_4_38Z"/>
+    <origin rpy="-1.57079632679 -3.12323916977e-16 -3.14159265359" xyz="2.72875357143e-18 -0.043 0.04"/>
+  </joint>
+  <joint name="FrontLeftLeg/Wheel/X5_4" type="revolute">
+    <parent link="hebi_x5_4_38Z"/>
+    <child link="pm_2155_01_53Z"/>
+    <axis xyz="2.89067447375e-15 -4.53884247505e-16 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-2.14e9" upper="+2.14e9" velocity="100"/>
+    <origin rpy="0.0 -2.77555756027e-17 1.84889274661e-32" xyz="-8.38100223695e-17 2.90160367205e-17 0.03"/>
+  </joint>
+  <gazebo reference="FrontLeftLeg/Wheel/X5_4">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <joint name="pm_2155_01_53Z_to_pp_2074_08_5Z" type="fixed">
+    <parent link="pm_2155_01_53Z"/>
+    <child link="pp_2074_08_5Z"/>
+    <origin rpy="5.07543359007e-16 5.45441840558e-15 -0.785398163345" xyz="7.17406055329e-17 1.02660621481e-17 0.009"/>
+  </joint>
+  <joint name="a_2095_01_45Z_to_tubepar_44Z" type="fixed">
+    <parent link="a_2095_01_45Z"/>
+    <child link="tubepar_44Z"/>
+    <origin rpy="3.14159265359 -1.57079632679 0.0" xyz="1e-23 -0.05 -0.001"/>
+  </joint>
+  <joint name="tubepar_44Z_to_a_2039_02_51Z" type="fixed">
+    <parent link="tubepar_44Z"/>
+    <child link="a_2039_02_51Z"/>
+    <origin rpy="1.57079632679 2.50240867501e-14 1.57079632679" xyz="-4.05110958394e-20 0.075 -3.77475440696e-18"/>
+  </joint>
+  <joint name="a_2039_02_51Z_to_hebi_x5_4_16Z" type="fixed">
+    <parent link="a_2039_02_51Z"/>
+    <child link="hebi_x5_4_16Z"/>
+    <origin rpy="1.22464679915e-16 1.04083409e-17 2.47905995925e-14" xyz="0.014 3.22351690368e-16 0.02"/>
+  </joint>
+  <joint name="RightArm/Base/X5_4" type="revolute">
+    <parent link="hebi_x5_4_16Z"/>
+    <child link="a_2040_01r_20Z"/>
+    <axis xyz="5.08239990574e-17 -1.73472348e-16 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-2" upper="+2" velocity="100"/>
+    <origin rpy="-1.23259516441e-32 -8.89879155574e-17 1.22464679915e-16" xyz="-5.53186988891e-17 -2.96636102637e-18 0.03"/>
+  </joint>
+  <gazebo reference="RightArm/Base/X5_4">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <joint name="a_2040_01r_20Z_to_hebi_x5_9_11Z" type="fixed">
+    <parent link="a_2040_01r_20Z"/>
+    <child link="hebi_x5_9_11Z"/>
+    <origin rpy="1.57079632679 -0.0 -5.08239990574e-17" xyz="-1.324866e-05 0.02249724957 0.055"/>
+  </joint>
+  <joint name="RightArm/Shoulder/X5_9" type="revolute">
+    <parent link="hebi_x5_9_11Z"/>
+    <child link="a_2038_02_18Z"/>
+    <axis xyz="1.618464767e-16 -2.27765793957e-16 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-0.4" upper="+3.53" velocity="100"/>
+    <origin rpy="0.0 -2.77555756e-17 -2.46519032882e-32" xyz="-5.19880245598e-17 7.37788089648e-18 0.03"/>
+  </joint>
+  <gazebo reference="RightArm/Shoulder/X5_9">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <joint name="a_2038_02_18Z_to_tubepar_13Z" type="fixed">
+    <parent link="a_2038_02_18Z"/>
+    <child link="tubepar_13Z"/>
+    <origin rpy="1.57079632679 -1.57079632679 0.0" xyz="0.0135 -2.97332976645e-18 0.02"/>
+  </joint>
+  <joint name="tubepar_13Z_to_a_2039_02_14Z" type="fixed">
+    <parent link="tubepar_13Z"/>
+    <child link="a_2039_02_14Z"/>
+    <origin rpy="-1.57079632679 -2.50240867501e-14 -1.57079632679" xyz="-3.71968293152e-20 -0.3 -6.88989761184e-19"/>
+  </joint>
+  <joint name="a_2039_02_14Z_to_hebi_x5_4_19Z" type="fixed">
+    <parent link="a_2039_02_14Z"/>
+    <child link="hebi_x5_4_19Z"/>
+    <origin rpy="1.22464679915e-16 1.04083409e-17 2.4901621895e-14" xyz="0.014 3.28184536866e-16 0.02"/>
+  </joint>
+  <joint name="RightArm/Elbow/X5_4" type="revolute">
+    <parent link="hebi_x5_4_19Z"/>
+    <child link="a_2038_02_17Z"/>
+    <axis xyz="1.791937114e-16 -3.43291579872e-16 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-1.7" upper="+1.7" velocity="100"/>
+    <origin rpy="0.0 -2.77555756e-17 -3.08148791102e-33" xyz="-5.14676075188e-17 3.91210731904e-18 0.03"/>
+  </joint>
+  <gazebo reference="RightArm/Elbow/X5_4">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <joint name="a_2038_02_17Z_to_tubepar_12Z" type="fixed">
+    <parent link="a_2038_02_17Z"/>
+    <child link="tubepar_12Z"/>
+    <origin rpy="1.57079632679 -1.57079632679 0.0" xyz="0.0135 1.05802847742e-17 0.02"/>
+  </joint>
+  <joint name="tubepar_12Z_to_a_2039_02_10Z" type="fixed">
+    <parent link="tubepar_12Z"/>
+    <child link="a_2039_02_10Z"/>
+    <origin rpy="1.57079632679 2.50240867501e-14 -1.57079632679" xyz="8.96948747589e-18 -0.3 5.20411785584e-18"/>
+  </joint>
+  <joint name="a_2039_02_10Z_to_hebi_x5_1_15Z" type="fixed">
+    <parent link="a_2039_02_10Z"/>
+    <child link="hebi_x5_1_15Z"/>
+    <origin rpy="1.22464679915e-16 1.04083409e-17 2.50240867501e-14" xyz="0.014 3.30384762504e-16 0.02"/>
+  </joint>
+  <joint name="RightArm/Wrist/X5_1" type="revolute">
+    <parent link="hebi_x5_1_15Z"/>
+    <child link="a_2067_01_3Z"/>
+    <axis xyz="-2.173576279e-16 -3.43291579872e-16 1.0"/>
+    <dynamics damping="0.5" friction="0.06"/>
+    <limit effort="100" lower="-2.14e9" upper="+2.14e9" velocity="100"/>
+    <origin rpy="0.0 -2.77555756e-17 -3.08148791102e-33" xyz="-6.52072883701e-18 -1.02987473962e-17 0.03"/>
+  </joint>
+  <gazebo reference="RightArm/Wrist/X5_1">
+    <implicitSpringDamper>True</implicitSpringDamper>
+  </gazebo>
+  <!--Gazebo Plugins-->
+  <gazebo>
+    <plugin filename="libhebiros_gazebo_plugin.so" name="hebiros_gazebo_plugin"/>
+  </gazebo>
+  <!--Links-->
+  <link name="base_link">
+    <!--Transformation from CyPhy2CAD global reference frame to base_link-->
+    <CyPhy2CAD>
+      <CADAssembly_metrics>
+        <RotationMatrix>
+          <Row>
+            <Column Value="1.0"/>
+            <Column Value="0.0"/>
+            <Column Value="0.0"/>
+          </Row>
+          <Row>
+            <Column Value="0.0"/>
+            <Column Value="1.0"/>
+            <Column Value="0.0"/>
+          </Row>
+          <Row>
+            <Column Value="0.0"/>
+            <Column Value="0.0"/>
+            <Column Value="1.0"/>
+          </Row>
+        </RotationMatrix>
+        <Translation X="1e-20" Y="1e-20" Z="1e-20"/>
+      </CADAssembly_metrics>
+    </CyPhy2CAD>
+  </link>
+  <link name="a_2038_02_31Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0135 3.07115354976e-16 -0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_31z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0135 3.07115354976e-16 -0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_31z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00410529076991 3.07115354976e-16 -0.0057211595801"/>
+      <mass value="0.059108249978877175"/>
+      <inertia ixx="2.3632587043e-05" ixy="0.0" ixz="-3.93131579939e-06" iyy="2.03298829586e-05" iyz="0.0" izz="2.72912531732e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2038_02_31Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2038_02_8Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0135 3.50911952562e-16 -0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_8z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0135 3.50911952562e-16 -0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_8z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00410529076991 3.50911952562e-16 -0.0057211595801"/>
+      <mass value="0.059108249978877175"/>
+      <inertia ixx="2.3632587043e-05" ixy="0.0" ixz="-3.93131579939e-06" iyy="2.03298829586e-05" iyz="0.0" izz="2.72912531732e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2038_02_8Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2038_02_34Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0135 3.5624102308e-16 -0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_34z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0135 3.5624102308e-16 -0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_34z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00410529076991 3.5624102308e-16 -0.0057211595801"/>
+      <mass value="0.059108249978877175"/>
+      <inertia ixx="2.3632587043e-05" ixy="0.0" ixz="-3.93131579939e-06" iyy="2.03298829586e-05" iyz="0.0" izz="2.72912531732e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2038_02_34Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2038_02_23Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.0135 3.23102566531e-16 -0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_23z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.0135 3.23102566531e-16 -0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_23z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00410529076991 3.23102566531e-16 -0.0057211595801"/>
+      <mass value="0.059108249978877175"/>
+      <inertia ixx="2.3632587043e-05" ixy="0.0" ixz="-3.93131579939e-06" iyy="2.03298829586e-05" iyz="0.0" izz="2.72912531732e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2038_02_23Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2038_02_62Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="5.68434188608e-17 -2.4945794199e-33 -4.46672171829e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_62z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="5.68434188608e-17 -2.4945794199e-33 -4.46672171829e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_62z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0176052907699 -2.4945794199e-33 0.0142788404199"/>
+      <mass value="0.059108249978877175"/>
+      <inertia ixx="2.3632587043e-05" ixy="0.0" ixz="-3.93131579939e-06" iyy="2.03298829586e-05" iyz="0.0" izz="2.72912531732e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2038_02_62Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2038_02_18Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="5.68434188608e-17 -7.94738722418e-33 -1.07776288758e-32"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_18z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="5.68434188608e-17 -7.94738722418e-33 -1.07776288758e-32"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_18z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0176052907699 -7.94738722418e-33 0.0142788404199"/>
+      <mass value="0.059108249978877175"/>
+      <inertia ixx="2.3632587043e-05" ixy="0.0" ixz="-3.93131579939e-06" iyy="2.03298829586e-05" iyz="0.0" izz="2.72912531732e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2038_02_18Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2038_02_60Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="5.68434188608e-17 4.46674163401e-33 -5.45279784642e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_60z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="5.68434188608e-17 4.46674163401e-33 -5.45279784642e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_60z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0176052907699 4.46674163401e-33 0.0142788404199"/>
+      <mass value="0.059108249978877175"/>
+      <inertia ixx="2.3632587043e-05" ixy="0.0" ixz="-3.93131579939e-06" iyy="2.03298829586e-05" iyz="0.0" izz="2.72912531732e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2038_02_60Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2038_02_17Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="5.68434188608e-17 1.42108547152e-17 -9.25182095741e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_17z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="5.68434188608e-17 1.42108547152e-17 -9.25182095741e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2038_02_17z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0176052907699 1.42108547152e-17 0.0142788404199"/>
+      <mass value="0.059108249978877175"/>
+      <inertia ixx="2.3632587043e-05" ixy="0.0" ixz="-3.93131579939e-06" iyy="2.03298829586e-05" iyz="0.0" izz="2.72912531732e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2038_02_17Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_32Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="1.42108547179e-17 2.46139223842e-17 4.63808404458e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_32z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="1.42108547179e-17 2.46139223842e-17 4.63808404458e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_32z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0114358895287 2.46139223842e-17 -0.0116659523685"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_32Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_46Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.014 6.11618462794e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_46z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.014 6.11618462794e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_46z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00256411047128 6.11618462794e-16 0.00833404763152"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_46Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_47Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.014 3.47887903851e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_47z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.014 3.47887903851e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_47z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00256411047128 3.47887903851e-16 0.00833404763152"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_47Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_49Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.014 5.99183964918e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_49z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.014 5.99183964918e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_49z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00256411047128 5.99183964918e-16 0.00833404763152"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_49Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_52Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.014 3.8602114419e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_52z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.014 3.8602114419e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_52z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00256411047128 3.8602114419e-16 0.00833404763152"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_52Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_41Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.014 3.68257575796e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_41z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.014 3.68257575796e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_41z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00256411047128 3.68257575796e-16 0.00833404763152"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_41Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_51Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.014 3.36230568215e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_51z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.014 3.36230568215e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_51z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00256411047128 3.36230568215e-16 0.00833404763152"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_51Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_9Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-1.42108547179e-17 2.46139223842e-17 3.13091598156e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_9z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-1.42108547179e-17 2.46139223842e-17 3.13091598156e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_9z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0114358895287 2.46139223842e-17 -0.0116659523685"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_9Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_36Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="1.42108547179e-17 2.46139223842e-17 3.13091598156e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_36z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="1.42108547179e-17 2.46139223842e-17 3.13091598156e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_36z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0114358895287 2.46139223842e-17 -0.0116659523685"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_36Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_25Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-1.42108547179e-17 2.46139223842e-17 4.63808404458e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_25z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-1.42108547179e-17 2.46139223842e-17 4.63808404458e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_25z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0114358895287 2.46139223842e-17 -0.0116659523685"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_25Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_61Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.014 3.29527512197e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_61z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.014 3.29527512197e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_61z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00256411047128 3.29527512197e-16 0.00833404763152"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_61Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_14Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.014 3.42395391581e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_14z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.014 3.42395391581e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_14z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00256411047128 3.42395391581e-16 0.00833404763152"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_14Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_55Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.014 3.43252641888e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_55z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.014 3.43252641888e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_55z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00256411047128 3.43252641888e-16 0.00833404763152"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_55Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2039_02_10Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.014 3.44595617219e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_10z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.014 3.44595617219e-16 0.02"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2039_02_10z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00256411047128 3.44595617219e-16 0.00833404763152"/>
+      <mass value="0.08075605008850124"/>
+      <inertia ixx="3.54766366127e-05" ixy="0.0" ixz="-8.29679742245e-06" iyy="3.7139980371e-05" iyz="0.0" izz="5.23238184568e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2039_02_10Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2040_01l_54Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="5.68434188608e-17 1.16987225868e-17 6.69157512642e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2040_01l_54z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="5.68434188608e-17 1.16987225868e-17 6.69157512642e-33"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2040_01l_54z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00488957903226 -0.0237747335213 0.0321044758926"/>
+      <mass value="0.2094618060096302"/>
+      <inertia ixx="0.000169129010671" ixy="4.37501745881e-06" ixz="1.7358738295e-06" iyy="0.00021478774811" iyz="3.00638650677e-05" izz="0.000117912633461"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2040_01l_54Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2040_01r_20Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.00144337567 0.0366111248 -0.0110127649"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2040_01r_20z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.00144337567 0.0366111248 -0.0110127649"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2040_01r_20z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.00488072891732 0.023773447037 0.0321050136792"/>
+      <mass value="0.20946875957142486"/>
+      <inertia ixx="0.000169129746509" ixy="-4.36461036343e-06" ixz="1.76240049129e-06" iyy="0.000214781632135" iyz="-3.00601654615e-05" izz="0.000117900987106"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2040_01r_20Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="a_2067_01_4Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-2.75027898169e-18 -5.94367311552e-18 0.035"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2067_01_4z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-2.75027898169e-18 -5.94367311552e-18 0.035"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2067_01_4z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-3.41062518604e-05 3.0195053085e-05 0.0155998803982"/>
+      <mass value="0.10633580428723459"/>
+      <inertia ixx="3.77469994947e-05" ixy="0.0" ixz="-2.61103759562e-08" iyy="3.77444953787e-05" iyz="-2.39585861234e-08" izz="2.42776535886e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2067_01_4Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.002</minDepth>
+    <maxVel>0</maxVel>
+  </gazebo>
+  <link name="a_2067_01_3Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="2.20737603613e-16 8.26718159968e-18 0.035"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2067_01_3z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="2.20737603613e-16 8.26718159968e-18 0.035"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2067_01_3z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-3.41062518602e-05 3.0195053085e-05 0.0155998803982"/>
+      <mass value="0.10633580428723459"/>
+      <inertia ixx="3.77469994947e-05" ixy="0.0" ixz="-2.61103759562e-08" iyy="3.77444953787e-05" iyz="-2.39585861234e-08" izz="2.42776535886e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2067_01_3Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.002</minDepth>
+    <maxVel>0</maxVel>
+  </gazebo>
+  <link name="a_2095_01_45Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="1e-23 1e-23 1e-23"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2095_01_45z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="1e-23 1e-23 1e-23"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/a_2095_01_45z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="1e-23 1e-23 0.00602343578398"/>
+      <mass value="0.4495849869005886"/>
+      <inertia ixx="0.000761142683555" ixy="0.0" ixz="0.0" iyy="0.000761142070916" iyz="0.0" izz="0.00141066589678"/>
+    </inertial>
+  </link>
+  <gazebo reference="a_2095_01_45Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_30Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-8.20357803102e-19 -0.2 -5.03064256918e-15"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_30z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-8.20357803102e-19 -0.2 -5.03064256918e-15"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_30z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-8.20357803102e-19 -0.1 -5.03064256918e-15"/>
+      <mass value="0.08088951519442687"/>
+      <inertia ixx="0.00027877880946" ixy="0.0" ixz="0.0" iyy="1.82942036252e-05" iyz="0.0" izz="0.000278778828795"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_30Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_40Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_40z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_40z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0 0.0635 0.0"/>
+      <mass value="0.05136484214846103"/>
+      <inertia ixx="7.48470317633e-05" ixy="0.0" ixz="0.0" iyy="1.1616819302e-05" iyz="0.0" izz="7.48470440408e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_40Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_42Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="1.51533398302e-19 -0.075 -1.6123233996e-23"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_42z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="1.51533398302e-19 -0.075 -1.6123233996e-23"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_42z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="1.51533398302e-19 -0.0375 -1.6123233996e-23"/>
+      <mass value="0.030333568197910072"/>
+      <inertia ixx="1.76490304682e-05" ixy="0.0" ixz="0.0" iyy="6.86032635943e-06" iyz="0.0" izz="1.76490160767e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_42Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_50Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="1.11022302463e-19 -1.77635683907e-18 -3.07674029841e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_50z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="1.11022302463e-19 -1.77635683907e-18 -3.07674029841e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_50z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="1.11022302463e-19 0.0635 -3.07674029841e-18"/>
+      <mass value="0.05136484214846103"/>
+      <inertia ixx="7.48470317633e-05" ixy="0.0" ixz="0.0" iyy="1.1616819302e-05" iyz="0.0" izz="7.48470440408e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_50Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_48Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="1.13495302842e-19 -0.127 2.27373675443e-16"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_48z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="1.13495302842e-19 -0.127 2.27373675443e-16"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_48z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="1.13495302842e-19 -0.0635 2.27373675443e-16"/>
+      <mass value="0.05136484214846103"/>
+      <inertia ixx="7.48470317633e-05" ixy="0.0" ixz="0.0" iyy="1.1616819302e-05" iyz="0.0" izz="7.48470440408e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_48Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_43Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="1.13495302842e-19 -0.127 2.13162820728e-16"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_43z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="1.13495302842e-19 -0.127 2.13162820728e-16"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_43z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="1.13495302842e-19 -0.0635 2.13162820728e-16"/>
+      <mass value="0.05136484214846103"/>
+      <inertia ixx="7.48470317633e-05" ixy="0.0" ixz="0.0" iyy="1.1616819302e-05" iyz="0.0" izz="7.48470440408e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_43Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_44Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="3.39907530978e-34 6.16297151796e-34 -5.55111124636e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_44z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="3.39907530978e-34 6.16297151796e-34 -5.55111124636e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_44z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="3.39907530978e-34 0.0375 -5.55111124636e-18"/>
+      <mass value="0.030333568197910072"/>
+      <inertia ixx="1.76490304682e-05" ixy="0.0" ixz="0.0" iyy="6.86032635943e-06" iyz="0.0" izz="1.76490160767e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_44Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_7Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="4.32068283077e-18 -0.2 -5.0448534239e-15"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_7z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4.32068283077e-18 -0.2 -5.0448534239e-15"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_7z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="4.32068283077e-18 -0.1 -5.0448534239e-15"/>
+      <mass value="0.08088951519442687"/>
+      <inertia ixx="0.00027877880946" ixy="0.0" ixz="0.0" iyy="1.82942036252e-05" iyz="0.0" izz="0.000278778828795"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_7Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_35Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="2.78474452683e-18 -0.2 -5.00222085975e-15"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_35z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="2.78474452683e-18 -0.2 -5.00222085975e-15"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_35z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="2.78474452683e-18 -0.1 -5.00222085975e-15"/>
+      <mass value="0.08088951519442687"/>
+      <inertia ixx="0.00027877880946" ixy="0.0" ixz="0.0" iyy="1.82942036252e-05" iyz="0.0" izz="0.000278778828795"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_35Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_24Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="8.20357803102e-19 -0.2 -5.01643171447e-15"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_24z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="8.20357803102e-19 -0.2 -5.01643171447e-15"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_24z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="8.20357803102e-19 -0.1 -5.01643171447e-15"/>
+      <mass value="0.08088951519442687"/>
+      <inertia ixx="0.00027877880946" ixy="0.0" ixz="0.0" iyy="1.82942036252e-05" iyz="0.0" izz="0.000278778828795"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_24Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_56Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="4.84788958735e-18 -0.3 1.31655315772e-17"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_56z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4.84788958735e-18 -0.3 1.31655315772e-17"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_56z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="4.84788958735e-18 -0.15 1.31655315772e-17"/>
+      <mass value="0.12133427279164029"/>
+      <inertia ixx="0.000923727684155" ixy="0.0" ixz="0.0" iyy="2.74413054377e-05" iyz="0.0" izz="0.000923727713157"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_56Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_13Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-3.71968293152e-20 -0.3 -6.88989761184e-19"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_13z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-3.71968293152e-20 -0.3 -6.88989761184e-19"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_13z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-3.71968293152e-20 -0.15 -6.88989761184e-19"/>
+      <mass value="0.12133427279164029"/>
+      <inertia ixx="0.000923727684155" ixy="0.0" ixz="0.0" iyy="2.74413054377e-05" iyz="0.0" izz="0.000923727713157"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_13Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_59Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-3.56280822649e-19 -0.3 4.84778447903e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_59z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-3.56280822649e-19 -0.3 4.84778447903e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_59z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-3.56280822649e-19 -0.15 4.84778447903e-18"/>
+      <mass value="0.12133427279164029"/>
+      <inertia ixx="0.000923727684155" ixy="0.0" ixz="0.0" iyy="2.74413054377e-05" iyz="0.0" izz="0.000923727713157"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_59Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="tubepar_12Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="8.96948747589e-18 -0.3 5.20411785584e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_12z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="8.96948747589e-18 -0.3 5.20411785584e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/tubepar_12z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="8.96948747589e-18 -0.15 5.20411785584e-18"/>
+      <mass value="0.12133427279164029"/>
+      <inertia ixx="0.000923727684155" ixy="0.0" ixz="0.0" iyy="2.74413054377e-05" iyz="0.0" izz="0.000923727713157"/>
+    </inertial>
+  </link>
+  <gazebo reference="tubepar_12Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="pm-2132-01_29Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm-2132-01_29z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm-2132-01_29z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00279899640977 -0.0249156289308 0.0217621079736"/>
+      <mass value="0.00011123944034828995"/>
+      <inertia ixx="8.27045310277e-08" ixy="3.91246560309e-09" ixz="1.30533871091e-09" iyy="8.43993472647e-08" iyz="2.34003348491e-08" izz="7.43473287776e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="pm-2132-01_29Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="pm-2132-01_6Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="1.21687158476e-32 7.83812846119e-33 -7.1054273576e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm-2132-01_6z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="1.21687158476e-32 7.83812846119e-33 -7.1054273576e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm-2132-01_6z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00279899640977 -0.0249156289308 0.0217621079736"/>
+      <mass value="0.00011123944034828995"/>
+      <inertia ixx="8.27045310277e-08" ixy="3.91246560309e-09" ixz="1.30533871091e-09" iyy="8.43993472647e-08" iyz="2.34003348491e-08" izz="7.43473287776e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="pm-2132-01_6Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="pm-2132-01_33Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-1.21687158476e-32 -7.9390895775e-33 7.1054273576e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm-2132-01_33z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-1.21687158476e-32 -7.9390895775e-33 7.1054273576e-18"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm-2132-01_33z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00279899640977 -0.0249156289308 0.0217621079736"/>
+      <mass value="0.00011123944034828995"/>
+      <inertia ixx="8.27045310277e-08" ixy="3.91246560309e-09" ixz="1.30533871091e-09" iyy="8.43993472647e-08" iyz="2.34003348491e-08" izz="7.43473287776e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="pm-2132-01_33Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="pm-2132-01_22Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm-2132-01_22z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm-2132-01_22z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00279899640977 -0.0249156289308 0.0217621079736"/>
+      <mass value="0.00011123944034828995"/>
+      <inertia ixx="8.27045310277e-08" ixy="3.91246560309e-09" ixz="1.30533871091e-09" iyy="8.43993472647e-08" iyz="2.34003348491e-08" izz="7.43473287776e-08"/>
+    </inertial>
+  </link>
+  <gazebo reference="pm-2132-01_22Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.0005</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="pm_2155_01_21Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.00099182129 -0.0071643037 -0.000236828"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm_2155_01_21z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.00099182129 -0.0071643037 -0.000236828"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm_2155_01_21z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="1.34037442348e-07 1.11051366723e-07 0.00499989583184"/>
+      <mass value="0.052674179644478125"/>
+      <inertia ixx="1.14786537077e-05" ixy="0.0" ixz="0.0" iyy="1.14786271535e-05" iyz="0.0" izz="2.18768701014e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="pm_2155_01_21Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="pm_2155_01_1Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.00099182129 -0.0071643037 -0.000236828"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm_2155_01_1z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.00099182129 -0.0071643037 -0.000236828"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm_2155_01_1z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="1.34037442367e-07 1.11051366695e-07 0.00499989583184"/>
+      <mass value="0.052674179644478125"/>
+      <inertia ixx="1.14786537077e-05" ixy="0.0" ixz="0.0" iyy="1.14786271535e-05" iyz="0.0" izz="2.18768701014e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="pm_2155_01_1Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="pm_2155_01_28Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.00099182129 -0.0071643037 -0.000236828"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm_2155_01_28z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.00099182129 -0.0071643037 -0.000236828"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm_2155_01_28z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="1.34037442405e-07 1.11051366723e-07 0.00499989583184"/>
+      <mass value="0.052674179644478125"/>
+      <inertia ixx="1.14786537077e-05" ixy="0.0" ixz="0.0" iyy="1.14786271535e-05" iyz="0.0" izz="2.18768701014e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="pm_2155_01_28Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="pm_2155_01_53Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.00099182129 -0.0071643037 -0.000236828"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm_2155_01_53z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.00099182129 -0.0071643037 -0.000236828"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pm_2155_01_53z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="1.34037442366e-07 1.11051366695e-07 0.00499989583184"/>
+      <mass value="0.052674179644478125"/>
+      <inertia ixx="1.14786537077e-05" ixy="0.0" ixz="0.0" iyy="1.14786271535e-05" iyz="0.0" izz="2.18768701014e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="pm_2155_01_53Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Grey</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0</minDepth>
+    <maxVel>100</maxVel>
+  </gazebo>
+  <link name="pp_2074_08_65Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="1.72185932402e-12 -1.62742449471e-11 0.03175"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pp_2074_08_65z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="1.72185932402e-12 -1.62742449471e-11 0.03175"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pp_2074_08_65z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-5.78060531661e-07 4.17592389199e-07 0.0190499354094"/>
+      <mass value="0.7635860425050807"/>
+      <inertia ixx="0.002680677325" ixy="0.0" ixz="0.0" iyy="0.00268067446492" iyz="0.0" izz="0.00527682335031"/>
+    </inertial>
+  </link>
+  <gazebo reference="pp_2074_08_65Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.7</mu1>
+    <mu2>0.7</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>50</maxVel>
+  </gazebo>
+  <link name="pp_2074_08_27Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-4.93542465955e-12 5.74863970326e-12 0.03175"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pp_2074_08_27z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-4.93542465955e-12 5.74863970326e-12 0.03175"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pp_2074_08_27z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-5.78067188945e-07 4.17614412083e-07 0.0190499354094"/>
+      <mass value="0.7635860425050807"/>
+      <inertia ixx="0.002680677325" ixy="0.0" ixz="0.0" iyy="0.00268067446492" iyz="0.0" izz="0.00527682335031"/>
+    </inertial>
+  </link>
+  <gazebo reference="pp_2074_08_27Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.7</mu1>
+    <mu2>0.7</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>50</maxVel>
+  </gazebo>
+  <link name="pp_2074_08_2Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-4.70909948254e-12 4.70775518968e-12 0.03175"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pp_2074_08_2z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-4.70909948254e-12 4.70775518968e-12 0.03175"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pp_2074_08_2z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-5.7806696262e-07 4.17613371199e-07 0.0190499354094"/>
+      <mass value="0.7635860425050807"/>
+      <inertia ixx="0.002680677325" ixy="0.0" ixz="0.0" iyy="0.00268067446492" iyz="0.0" izz="0.00527682335031"/>
+    </inertial>
+  </link>
+  <gazebo reference="pp_2074_08_2Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.7</mu1>
+    <mu2>0.7</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>50</maxVel>
+  </gazebo>
+  <link name="pp_2074_08_5Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="3.39674687669e-12 3.39475584209e-12 0.03175"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pp_2074_08_5z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="3.39674687669e-12 3.39475584209e-12 0.03175"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/pp_2074_08_5z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-5.78058856773e-07 4.176120582e-07 0.0190499354094"/>
+      <mass value="0.7635860425050807"/>
+      <inertia ixx="0.002680677325" ixy="0.0" ixz="0.0" iyy="0.00268067446492" iyz="0.0" izz="0.00527682335031"/>
+    </inertial>
+  </link>
+  <gazebo reference="pp_2074_08_5Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Black</material>
+    <mu1>0.7</mu1>
+    <mu2>0.7</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>50</maxVel>
+  </gazebo>
+  <link name="hebi_x5_1_57Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-1.59502462615e-18 -5.14937369808e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_1_57z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-1.59502462615e-18 -5.14937369808e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_1_57z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.31314990731599424"/>
+      <inertia ixx="0.000130134484577" ixy="-1.76457619391e-05" ixz="1.18542673976e-08" iyy="0.00022573878578" iyz="1.19840924602e-07" izz="0.000308861203858"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_1_57Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="LeftArm/Wrist/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/LeftArm/Wrist</topicName>
+        <bodyName>LeftArm/Wrist/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>LeftArm/Wrist/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+  <link name="hebi_x5_1_15Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-3.26036441851e-18 -5.14937369808e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_1_15z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-3.26036441851e-18 -5.14937369808e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_1_15z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.31314990731599424"/>
+      <inertia ixx="0.000130134484577" ixy="-1.76457619391e-05" ixz="1.18542673976e-08" iyy="0.00022573878578" iyz="1.19840924602e-07" izz="0.000308861203858"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_1_15Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="RightArm/Wrist/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/RightArm/Wrist</topicName>
+        <bodyName>RightArm/Wrist/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>RightArm/Wrist/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+  <link name="hebi_x5_4_26Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-5.37843975414e-17 1.46585342226e-16 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_26z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-5.37843975414e-17 1.46585342226e-16 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_26z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.33507040082811385"/>
+      <inertia ixx="0.000139243898497" ixy="-1.88809652748e-05" ixz="1.26840661154e-08" iyy="0.000241540500785" iyz="1.28229789324e-07" izz="0.000330481488128"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_4_26Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="FrontRightLeg/Wheel/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/FrontRightLeg/Wheel</topicName>
+        <bodyName>FrontRightLeg/Wheel/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>FrontRightLeg/Wheel/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+  <link name="hebi_x5_4_58Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-5.79180290737e-17 -2.49799181e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_58z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-5.79180290737e-17 -2.49799181e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_58z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.33507040082811385"/>
+      <inertia ixx="0.000139243898497" ixy="-1.88809652748e-05" ixz="1.26840661154e-08" iyy="0.000241540500785" iyz="1.28229789324e-07" izz="0.000330481488128"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_4_58Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="LeftArm/Base/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/LeftArm/Base</topicName>
+        <bodyName>LeftArm/Base/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>LeftArm/Base/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+  <link name="hebi_x5_4_16Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-5.60810588749e-17 -2.49799181e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_16z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-5.60810588749e-17 -2.49799181e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_16z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.33507040082811385"/>
+      <inertia ixx="0.000139243898497" ixy="-1.88809652748e-05" ixz="1.26840661154e-08" iyy="0.000241540500785" iyz="1.28229789324e-07" izz="0.000330481488128"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_4_16Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="RightArm/Base/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/RightArm/Base</topicName>
+        <bodyName>RightArm/Base/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>RightArm/Base/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+  <link name="hebi_x5_4_39Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-7.03267206152e-17 1.40487758106e-17 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_39z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-7.03267206152e-17 1.40487758106e-17 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_39z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.33507040082811385"/>
+      <inertia ixx="0.000139243898497" ixy="-1.88809652748e-05" ixz="1.26840661154e-08" iyy="0.000241540500785" iyz="1.28229789324e-07" izz="0.000330481488128"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_4_39Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="BackRightLeg/Wheel/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/BackRightLeg/Wheel</topicName>
+        <bodyName>BackRightLeg/Wheel/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>BackRightLeg/Wheel/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+  <link name="hebi_x5_4_37Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-5.37843975414e-17 1.32833730061e-16 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_37z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-5.37843975414e-17 1.32833730061e-16 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_37z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.33507040082811385"/>
+      <inertia ixx="0.000139243898497" ixy="-1.88809652748e-05" ixz="1.26840661154e-08" iyy="0.000241540500785" iyz="1.28229789324e-07" izz="0.000330481488128"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_4_37Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="BackLeftLeg/Wheel/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/BackLeftLeg/Wheel</topicName>
+        <bodyName>BackLeftLeg/Wheel/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>BackLeftLeg/Wheel/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+  <link name="hebi_x5_4_38Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-7.03267206152e-17 2.87188730754e-17 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_38z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-7.03267206152e-17 2.87188730754e-17 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_38z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.33507040082811385"/>
+      <inertia ixx="0.000139243898497" ixy="-1.88809652748e-05" ixz="1.26840661154e-08" iyy="0.000241540500785" iyz="1.28229789324e-07" izz="0.000330481488128"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_4_38Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="FrontLeftLeg/Wheel/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/FrontLeftLeg/Wheel</topicName>
+        <bodyName>FrontLeftLeg/Wheel/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>FrontLeftLeg/Wheel/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+  <link name="hebi_x5_4_64Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-5.58208529822e-17 -5.14937369808e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_64z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-5.58208529822e-17 -5.14937369808e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_64z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.33507040082811385"/>
+      <inertia ixx="0.000139243898497" ixy="-1.88809652748e-05" ixz="1.26840661154e-08" iyy="0.000241540500785" iyz="1.28229789324e-07" izz="0.000330481488128"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_4_64Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="LeftArm/Elbow/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/LeftArm/Elbow</topicName>
+        <bodyName>LeftArm/Elbow/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>LeftArm/Elbow/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+  <link name="hebi_x5_4_19Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-5.41555131898e-17 9.06148101712e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_19z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-5.41555131898e-17 9.06148101712e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_4_19z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.33507040082811385"/>
+      <inertia ixx="0.000139243898497" ixy="-1.88809652748e-05" ixz="1.26840661154e-08" iyy="0.000241540500785" iyz="1.28229789324e-07" izz="0.000330481488128"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_4_19Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="RightArm/Elbow/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/RightArm/Elbow</topicName>
+        <bodyName>RightArm/Elbow/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>RightArm/Elbow/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+  <link name="hebi_x5_9_63Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-5.60810615027e-17 -3.41648690936e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_9_63z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-5.60810615027e-17 -3.41648690936e-18 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_9_63z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.3601223934133934"/>
+      <inertia ixx="0.000149654657264" ixy="-2.029262623e-05" ixz="1.36324075072e-08" iyy="0.000259599603648" iyz="1.37817063293e-07" izz="0.000355190384437"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_9_63Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="LeftArm/Shoulder/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/LeftArm/Shoulder</topicName>
+        <bodyName>LeftArm/Shoulder/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>LeftArm/Shoulder/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+  <link name="hebi_x5_9_11Z">
+    <visual>
+      <origin rpy="0 0 0" xyz="-5.44157217103e-17 1.07943678058e-17 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_9_11z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-5.44157217103e-17 1.07943678058e-17 0.015"/>
+      <geometry>
+        <mesh filename="package://crab_description/meshes/hebi_x5_9_11z_prt.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0142019322139 -0.00151173442654 0.0150064707722"/>
+      <mass value="0.3601223934133934"/>
+      <inertia ixx="0.000149654657264" ixy="-2.029262623e-05" ixz="1.36324075072e-08" iyy="0.000259599603648" iyz="1.37817063293e-07" izz="0.000355190384437"/>
+    </inertial>
+  </link>
+  <gazebo reference="hebi_x5_9_11Z">
+    <selfCollide>True</selfCollide>
+    <material>Gazebo/Red</material>
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>10000000</kp>
+    <kd>1</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>100</maxVel>
+    <sensor name="RightArm/Shoulder/imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>/hebiros_gazebo_plugin/imu/RightArm/Shoulder</topicName>
+        <bodyName>RightArm/Shoulder/imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0.025 0 0.003</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>RightArm/Shoulder/imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+</robot>

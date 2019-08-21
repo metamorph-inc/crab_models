@@ -1,0 +1,32 @@
+<launch>
+
+  <!-- Load URDF onto Parameter server, start Gazebo, spawn URDF in Gazebo -->
+  <include file="$(find crab_gazebo)/launch/spawn_urdf_in_gazebo.launch" >
+    <arg name="world_name" value="$(find crab_gazebo)/world/cube_pickup.world"/>
+  </include>
+
+  <!-- Start hebiros_node -->
+  <include file="$(find hebiros)/launch/hebiros_gazebo.launch" />
+
+  <!-- Lift crab arms -->
+  <node name="hold_up_crab_arms" pkg="crab_description" type="hold_up_crab_arms.py"
+        output="screen" launch-prefix="xterm -e" />
+
+  <!-- Move crab -->
+  <node name="move_crab" pkg="crab_description" type="move_crab.py"
+        output="screen" launch-prefix="xterm -e" />
+
+  <!-- Start keyboard listener -->
+  <node name="key_publisher" pkg="drivebot_description" type="key_publisher.py"
+        output="screen" launch-prefix="xterm -e" />
+
+  <!-- Start keystroke-to-Twist publisher -->
+  <node name="keystroke_to_cmd_vel" pkg="hebihexapod_description" type="keystroke_to_cmd_vel.py"
+        output="screen" launch-prefix="xterm -e" >
+        <remap from="cmd_vel" to="/skidsteer/cmd_vel">
+        </remap>
+  </node>
+
+  <!-- launch-prefix="xterm -e" -->
+
+</launch>
