@@ -8,11 +8,6 @@ project(crab_description)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  # hebiros  ## Uncomment once hebiros node is on ROS Kinetic build farm
-  roscpp
-  rospy
-  sensor_msgs
-  std_msgs
 )
 
 include_directories(

@@ -5,11 +5,6 @@ project(crab_gazebo)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  gazebo_ros
-  hebiros
-  crab_description
-  drivebot_description
-  hebihexapod_description
 )
 
 catkin_package(
